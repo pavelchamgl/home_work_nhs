@@ -5,8 +5,8 @@
 import re
 
 def camel_case(array: str) -> str:
-    result = re.split("-|_| |!|:|;|,",array)
-    return "".join(map(str.title, result))
+    result = re.split("-|_| |!|:|;|,", array)
+    return result[0] + "".join([word.capitalize() for word in result[1:]])
 
 
 
