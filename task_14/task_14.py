@@ -32,7 +32,8 @@ class Car:
                 f"Cost in RUB = {self.cost * 68.73}\n" \
                 f"Cost in $ = {self.cost * 1.06}"
 
-    def counter(self):
+    @classmethod
+    def counter(cls):
         return Car.count
 
     @staticmethod
